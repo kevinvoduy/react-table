@@ -12,5 +12,5 @@ npm run build:client
 
 ## run tests
 ```
-cd server && npm run test
+npm run test
 ```

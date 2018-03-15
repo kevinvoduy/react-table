@@ -17,7 +17,7 @@ describe('fetching data tests', () => {
   test('it should hit the id controller', async() => {
     expect.assertions(1);
     const { status, text } = await request(app.listen(1234))
-      .get('/api/data/ids');
+      .get('/api/data/objects');
     expect(status).toBe(200);
   });
 

@@ -1,9 +1,11 @@
-import axios from 'axios';
+// dummy data
+import objects from './data/objects.json';
+import metrics from './data/metrics.json';
 
 export const getIds = async(req, res) => {
   try {
-    // const id = await axios.get();
-    return res.status(200).send('ids hit')
+    const objects = objects;
+    return res.status(200).send(objects)
   } catch(err) {
     throw new Error(err.message);
   }
@@ -11,8 +13,8 @@ export const getIds = async(req, res) => {
 
 export const getMetrics = async(req, res) => {
   try {
-    // const metrics = await axios.get();
-    return res.status(200).send('metrics hit');
+    const metrics = metrics;
+    return res.status(200).send(metrics);
   } catch(err) {
     throw new Error(err.message);
   }
