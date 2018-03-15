@@ -1,10 +1,7 @@
 {
   "name": "react-table",
   "scripts": {
-    "postdeploy": [
-      "npm run build:client",
-      "npm run start:server"
-    ]
+    "postdeploy": "npm run build:client && npm run start:server"
   },
   "env": {
   },
