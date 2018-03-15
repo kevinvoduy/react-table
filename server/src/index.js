@@ -6,7 +6,7 @@ const app = App.express;
 const server = http.createServer(app);
 const PORT = 3000;
 
-const serve = server.listen('*', (err) => {
+const serve = server.listen(PORT, (err) => {
   if (err) throw new Error;
   else console.log('successfully connected to port:', PORT);
 });
