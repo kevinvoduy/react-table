@@ -2,22 +2,22 @@
 const objects = require('./data/objects.json');
 const metrics = require('./data/metrics.json');
 
-const getIds = (req, res) => {
+const getIds = async(req, res) => {
   try {
-    const objectIds = objects;
+    const objectIds = await objects;
     return res.status(200).send(objectIds);
   } catch(err) {
     throw new Error(err.message);
   }
 };
 
-getMetrics = (req, res) => {
+const getMetrics = async(req, res) => {
   try {
-    const metricsData = metrics;
+    const metricsData = await metrics;
     return res.status(200).send(metricsData);
   } catch(err) {
     throw new Error(err.message);
   }
 };
 
-module.exports = getIds, getMetrics;
+module.exports = { getIds: getIds, getMetrics: getMetrics }

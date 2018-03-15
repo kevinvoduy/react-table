@@ -1,6 +1,5 @@
 const express = require('express');
-const getIds = require('./controller');
-const getMetrics = require('./controller');
+const { getIds, getMetrics } = require('./controller');
 
 const router = express.Router();
 

@@ -8,7 +8,7 @@ export default class App extends Component {
   }
 
   render() {
-    console.log('props', this.props.proof);
+    console.log('props', this.props);
     return(
       <div>
         <table>
