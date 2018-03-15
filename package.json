@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Generates table from external api data",
   "main": "index.js",
+  "engines": {
+    "node": "8.9.4"
+  },
   "scripts": {
     "test": "cd server && npm run test",
     "start": "npm-run-all build:client start:server",
