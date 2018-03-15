@@ -4,9 +4,8 @@ const App = require('./config');
 const app = App.express;
 
 const server = http.createServer(app);
-const PORT = 3000;
 
-const serve = server.listen(process.env.PORT, (err) => {
+const serve = server.listen(process.env.PORT || 3000, (err) => {
   if (err) throw new Error;
   else console.log('successfully connected to port:', PORT);
 });
