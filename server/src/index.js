@@ -6,9 +6,9 @@ const app = App.express;
 const server = http.createServer(app);
 const PORT = 3000;
 
-server.listen(PORT, (err) => {
+const serve = server.listen(PORT, (err) => {
   if (err) throw new Error;
-  else console.log('Successfully connected on port', PORT);
+  else console.log('successfully connected to port:', PORT);
 });
 
-export default app;
+module.exports = { app: app, serve: server };

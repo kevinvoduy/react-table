@@ -1,14 +1,22 @@
 import React, { Component } from 'react'
-import Sample from './components/samples'
+import Samples from './components/Samples/Samples'
 
 export default class App extends Component {
-  state = {}
-  fetchAdIds = () => {
-
+  constructor() {
+    super();
+    this.state = {};
+    this.fetchAdIds = this.fetchAdIds.bind(this);
+    this.fetchMetrics = this.fetchMetrics.bind(this);
   }
-  fetchMetrics = () => {
 
+  fetchAdIds() {
+    console.log('hello');
   }
+
+  fetchMetrics() {
+    console.log('HELLO');
+  }
+
   render() {
     return (
       <div>

@@ -1,10 +1,9 @@
 import express from 'express';
 
-import { idRouter, metricsRouter } from '../components/controller.js';
+import dataRouter from '../components/router';
 
 const router = express.Router();
 
-router.use('/ids', idRouter);
-router.use('/metrics', metricsRouter);
+router.use('/data', dataRouter);
 
 export default router;
