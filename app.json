@@ -1,0 +1,21 @@
+{
+  "name": "react-table",
+  "scripts": {
+    "postdeploy": "npm run build:client"
+  },
+  "env": {
+  },
+  "formation": {
+    "web": {
+      "quantity": 1
+    }
+  },
+  "addons": [
+
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ]
+}
