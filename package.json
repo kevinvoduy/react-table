@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "cd server && npm run test",
+    "start": "npm-run-all build:client start:server",
     "build:client": "cd client && npm run build",
     "start:server": "cd server && npm run start"
   },
@@ -19,6 +20,7 @@
   },
   "homepage": "https://github.com/kevinvoduy/react-table#readme",
   "dependencies": {
-    "babel-cli": "^6.26.0"
+    "babel-cli": "^6.26.0",
+    "npm-run-all": "^4.1.2"
   }
 }
