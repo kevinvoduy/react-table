@@ -2,7 +2,7 @@
 import objects from './data/objects.json';
 import metrics from './data/metrics.json';
 
-export const getIds = async(req, res) => {
+export const getIds = (req, res) => {
   try {
     const objectIds = objects;
     return res.status(200).send(objectIds)
@@ -11,7 +11,7 @@ export const getIds = async(req, res) => {
   }
 };
 
-export const getMetrics = async(req, res) => {
+export const getMetrics = (req, res) => {
   try {
     const metricsData = metrics;
     return res.status(200).send(metricsData);
