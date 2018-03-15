@@ -1,6 +1,13 @@
 # react-table
 Generates table from external API data
-## setup
-```bash
-npm run start
+## server setup
+```
+bash
+cd server && npm run start
+```
+
+## client setup
+```
+bash
+cd client && npm run build
 ```
