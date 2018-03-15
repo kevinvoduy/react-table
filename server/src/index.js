@@ -7,7 +7,7 @@ const server = http.createServer(app);
 
 const serve = server.listen(process.env.PORT || 3000, (err) => {
   if (err) throw new Error;
-  else console.log('successfully connected to port:', PORT);
+  else console.log('successfully connected to port:', process.env.PORT || 3000);
 });
 
 module.exports = { app: app, serve: server };
