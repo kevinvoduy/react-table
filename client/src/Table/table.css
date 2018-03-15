@@ -1,0 +1,25 @@
+table {
+  width: 700px;
+  height: 200px;
+  overflow-x: scroll;
+  overflow-y: scroll;
+  display: block;
+}
+
+th {
+  margin: 0 1em;
+  padding: 0 .5em;
+}
+
+th:nth-child(1) {
+  float: left;
+  display: block;
+  background: gray;
+  width: 3em;
+  box-shadow: 2px 0 3px rgba(0,0,0,.25);
+  margin: 0;
+}
+
+th:nth-child(2) {
+  padding-left: .5em;
+}
