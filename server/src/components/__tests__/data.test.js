@@ -17,14 +17,14 @@ describe('fetching data tests', () => {
   test('it should hit the id controller', async() => {
     expect.assertions(1);
     const { status, text } = await request(app.listen(1234))
-      .get('/api/data/objects');
+      .get('/api/data/ads');
     expect(status).toBe(200);
   });
 
   test('it should hit the metrics controller', async() => {
     expect.assertions(1);
     const { status, text } = await request(app.listen(1233))
-      .get('/api/data/metrics');
+      .get('/api/data/ads_metrics');
     expect(status).toBe(200);
   });
 });

@@ -17,8 +17,8 @@ export default class App extends Component {
   }
 
   async fetchAdIds() {
-    const object = await axios.get('/api/data/objects');
-    const metrics = await axios.get('/api/data/metrics');
+    const object = await axios.get('/api/data/ads');
+    const metrics = await axios.get('/api/data/ads_metrics');
     this.setState({
       object,
       metrics,

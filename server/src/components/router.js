@@ -3,7 +3,7 @@ import { getIds, getMetrics } from './controller';
 
 const router = express.Router();
 
-router.route('/objects').get(getIds);
-router.route('/metrics').get(getMetrics);
+router.route('/ads').get(getIds);
+router.route('/ads_metrics').get(getMetrics);
 
 export default router;

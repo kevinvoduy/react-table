@@ -8,7 +8,6 @@ export default class App extends Component {
   }
 
   render() {
-    console.log(this.props.metrics)
     return(
       <div>
         <table>
@@ -23,48 +22,10 @@ export default class App extends Component {
             }
           </tr>
           {
-            this.props.object.map(item => {
+            this.props.object.map(name => {
               return(
                 <tr>
-                  <th id='fixed'>
-                   {item.name}
-                  </th>
-                  {
-                    this.props.metrics.column_names.map(header => {
-                      return(
-                        <th>{this.props.metrics.rows[0][header]}</th>
-                      )
-                    })
-                  }
-                </tr>
-              )
-            })
-          }
-          {
-            this.props.object.map(item => {
-              return(
-                <tr>
-                  <th id='fixed'>
-                   {item.name}
-                  </th>
-                  {
-                    this.props.metrics.column_names.map(header => {
-                      return(
-                        <th>{this.props.metrics.rows[0][header]}</th>
-                      )
-                    })
-                  }
-                </tr>
-              )
-            })
-          }
-          {
-            this.props.object.map(item => {
-              return(
-                <tr>
-                  <th id='fixed'>
-                   {item.name}
-                  </th>
+                  <th>{name.name}</th>
                   {
                     this.props.metrics.column_names.map(header => {
                       return(
