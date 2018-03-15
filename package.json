@@ -4,7 +4,9 @@
   "description": "Generates table from external api data",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:client": "cd client && npm run build",
+    "start:server": "cd server && npm run start"
   },
   "repository": {
     "type": "git",
@@ -15,5 +17,6 @@
   "bugs": {
     "url": "https://github.com/kevinvoduy/react-table/issues"
   },
-  "homepage": "https://github.com/kevinvoduy/react-table#readme"
+  "homepage": "https://github.com/kevinvoduy/react-table#readme",
+  "dependencies": {}
 }

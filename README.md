@@ -2,12 +2,15 @@
 Generates table from external API data
 ## server setup
 ```
-bash
-cd server && npm run start
+npm run start:server
 ```
 
 ## client setup
 ```
-bash
-cd client && npm run build
+npm run build:client
+```
+
+## run tests
+```
+cd server && npm run test
 ```
