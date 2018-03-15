@@ -25,7 +25,6 @@ export default class App extends Component {
   async fetchAdIds() {
     const object = await axios.get('/api/data/ads');
     const metrics = await axios.get('/api/data/ads_metrics');
-    console.log('metrics', metrics);
     this.setState({
       object,
       metrics,
@@ -50,7 +49,7 @@ export default class App extends Component {
           <Table
             object={this.state.object.data.ads}
             metrics={this.state.metrics.data}
-            proof={this.state.sortedMetrics.data}
+            poof={this.state.sortedMetrics.data}
           />
         </div>
       )

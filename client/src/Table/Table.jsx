@@ -8,7 +8,7 @@ export default class App extends Component {
   }
 
   render() {
-    console.log('props', this.props);
+    console.log('props', this.props.poof);
     return(
       <div>
         <table>
