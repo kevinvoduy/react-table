@@ -8,6 +8,7 @@ export default class App extends Component {
   }
 
   render() {
+    console.log('props', this.props.proof);
     return(
       <div>
         <table>
@@ -22,14 +23,14 @@ export default class App extends Component {
             }
           </tr>
           {
-            this.props.object.map(name => {
+            this.props.object.map((id, i) => {
               return(
                 <tr>
-                  <th>{name.name}</th>
+                  <th>{id.remote_id}</th>
                   {
                     this.props.metrics.column_names.map(header => {
                       return(
-                        <th>{this.props.metrics.rows[0][header]}</th>
+                        <th>{this.props.metrics.rows[i][header]}</th>
                       )
                     })
                   }

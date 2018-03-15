@@ -5,7 +5,7 @@ import metrics from './data/metrics.json';
 export const getIds = (req, res) => {
   try {
     const objectIds = objects;
-    return res.status(200).send(objectIds)
+    return res.status(200).send(objectIds);
   } catch(err) {
     throw new Error(err.message);
   }
