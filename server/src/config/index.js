@@ -1,8 +1,8 @@
-import express from 'express';
-import parser from 'body-parser';
-import path from 'path';
-import cors from 'cors';
-import router from '../routes';
+const express = require('express');
+const parser = require('body-parser');
+const path = require('path');
+const cors = require('cors');
+const router = require('../routes');
 
 const middleware = [
   parser.json(),
@@ -30,4 +30,4 @@ class App {
   }
 }
 
-export default new App();
+module.exports = new App();

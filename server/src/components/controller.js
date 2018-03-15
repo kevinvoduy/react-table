@@ -1,6 +1,6 @@
 // dummy data
-import objects from './data/objects.json';
-import metrics from './data/metrics.json';
+const objects = require('./data/objects.json');
+const metrics = require('./data/metrics.json');
 
 export const getIds = (req, res) => {
   try {
