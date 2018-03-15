@@ -4,18 +4,18 @@ import metrics from './data/metrics.json';
 
 export const getIds = async(req, res) => {
   try {
-    const objects = objects;
-    return res.status(200).send(objects)
+    const objectIds = objects;
+    return res.status(200).send(objectIds)
   } catch(err) {
     throw new Error(err.message);
   }
-}
+};
 
 export const getMetrics = async(req, res) => {
   try {
-    const metrics = metrics;
-    return res.status(200).send(metrics);
+    const metricsData = metrics;
+    return res.status(200).send(metricsData);
   } catch(err) {
     throw new Error(err.message);
   }
-}
+};
