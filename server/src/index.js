@@ -1,5 +1,5 @@
-import http from 'http'
-import App from './config'
+const http = require('http');
+const App = require('./config');
 
 const app = App.express;
 
