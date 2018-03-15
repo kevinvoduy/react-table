@@ -2,7 +2,7 @@
 const objects = require('./data/objects.json');
 const metrics = require('./data/metrics.json');
 
-export const getIds = (req, res) => {
+const getIds = (req, res) => {
   try {
     const objectIds = objects;
     return res.status(200).send(objectIds);
@@ -11,7 +11,7 @@ export const getIds = (req, res) => {
   }
 };
 
-export const getMetrics = (req, res) => {
+getMetrics = (req, res) => {
   try {
     const metricsData = metrics;
     return res.status(200).send(metricsData);
@@ -19,3 +19,5 @@ export const getMetrics = (req, res) => {
     throw new Error(err.message);
   }
 };
+
+module.exports = getIds, getMetrics;
