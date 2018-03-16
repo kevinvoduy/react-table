@@ -1,1 +1,1 @@
-web: webpack & node server/src/index.js
+web: npm run start
