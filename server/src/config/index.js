@@ -14,6 +14,7 @@ const middleware = [
   })
 ];
 
+// a new App instace is created for each server
 class App {
   constructor() {
     this.express = express();

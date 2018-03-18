@@ -1,7 +1,8 @@
 // dummy data
-const objects = require('./data/objects.json');
-const metrics = require('./data/metrics.json');
+const objects = require('./dummy-data/objects.json');
+const metrics = require('./dummy-data/metrics.json');
 
+// this controller gets IDs
 const getIds = async(req, res) => {
   try {
     const objectIds = await objects;
@@ -11,6 +12,7 @@ const getIds = async(req, res) => {
   }
 };
 
+// this controller gets Metrics
 const getMetrics = async(req, res) => {
   try {
     const metricsData = await metrics;

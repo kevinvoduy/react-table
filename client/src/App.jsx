@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import axios from 'axios'
-import Table from './Table/Table'
+import Table from './components/Table/Table'
 
 export default class App extends Component {
   constructor() {
@@ -22,6 +22,7 @@ export default class App extends Component {
     this.fetchData();
   }
 
+  // gets data from external API
   async fetchAdIds() {
     const object = await axios.get('/api/data/ads');
     const metrics = await axios.get('/api/data/ads_metrics');
