@@ -8,7 +8,7 @@
   },
   "scripts": {
     "test": "cd server && npm run test",
-    "start": "npm run start:server",
+    "start": "npm-run-all build:client start:server",
     "build:client": "cd client && npm run build",
     "start:server": "cd server && npm run start",
     "install:client": "cd client && npm install && npm install -D",
