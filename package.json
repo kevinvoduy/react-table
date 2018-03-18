@@ -9,7 +9,7 @@
   "heroku-postbuild": "npm run start",
   "scripts": {
     "test": "cd server && npm run test",
-    "start": "cd server && start:server",
+    "start": "cd server && npm run start:server",
     "build:client": "cd client && npm run build",
     "start:server": "cd server && npm run start",
     "install:client": "cd client && npm install && npm install -D",
