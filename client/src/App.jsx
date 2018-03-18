@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import axios from 'axios'
 import Table from './components/Table/Table'
+import Table2 from './components/Table2/Table2'
+import './app.css'
 
 export default class App extends Component {
   constructor() {
@@ -43,11 +45,18 @@ export default class App extends Component {
   }
 
   render() {
-    console.log('state', this.state);
     if (this.state.sortedMetrics.data.rows && this.state.object.data) {
       return (
-        <div>
+        <div className='container'>
+          <h2>Css table without veritcal scroll</h2>
           <Table
+            object={this.state.object.data.ads}
+            metrics={this.state.metrics.data}
+            poof={this.state.sortedMetrics.data}
+          />
+
+          <h2>React table with x/y scroll</h2>
+          <Table2
             object={this.state.object.data.ads}
             metrics={this.state.metrics.data}
             poof={this.state.sortedMetrics.data}

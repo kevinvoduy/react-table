@@ -1,12 +1,14 @@
 table {
   min-width: 500px;
+  width: 100%;
   overflow: auto;
   display: block;
+  border: 2px solid rgb(192, 190, 190);
 }
 
 th {
   margin: 0 1em;
-  padding: 0 .5em;
+  padding: .2em .5em;
 }
 
 th:nth-child(1) {
