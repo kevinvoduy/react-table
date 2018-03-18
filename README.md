@@ -1,13 +1,8 @@
 # react-table
 Generates table from external API data
-## server setup
+## setup
 ```
-npm run start:server
-```
-
-## client setup
-```
-npm run build:client
+npm start
 ```
 
 ## run tests
