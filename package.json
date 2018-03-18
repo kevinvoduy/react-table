@@ -6,6 +6,7 @@
   "engines": {
     "node": "v8.9.4"
   },
+  "heroku-postbuild": "npm run start",
   "scripts": {
     "test": "cd server && npm run test",
     "start": "npm-run-all build:client start:server",
