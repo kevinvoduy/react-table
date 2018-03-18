@@ -1,20 +1,21 @@
 table {
   min-width: 500px;
-  width: 100%;
+  width: 900px;
   overflow: auto;
   display: block;
   border: 2px solid rgb(192, 190, 190);
+  border-collapse: collapse;
 }
 
 th {
-  margin: 0 1em;
-  padding: .2em .5em;
+  padding: .4em .5em;
+  border: 1px solid rgb(192, 190, 190);
 }
 
 th:nth-child(1) {
   position: absolute;
   display: block;
-  background: gray;
+  background: rgb(206, 206, 206);
   width: 3em;
   box-shadow: 2px 0 3px rgba(0,0,0,.25);
   margin: 0;
