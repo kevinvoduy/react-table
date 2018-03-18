@@ -12,8 +12,8 @@
     "start": "npm-run-all build:client start:server",
     "build:client": "cd client && npm run build",
     "start:server": "cd server && npm run start",
-    "client": "cd client && npm install && npm install -D",
-    "server": "cd server && npm install && npm install -D"
+    "install:client": "cd client && npm install && npm install -D",
+    "install:server": "cd server && npm install && npm install -D"
   },
   "repository": {
     "type": "git",
