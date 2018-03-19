@@ -1,5 +1,7 @@
 # react-table
 Generates table from external API data.
+https://react-table-challenge.herokuapp.com/
+
 ## setup
 ```
 npm start
